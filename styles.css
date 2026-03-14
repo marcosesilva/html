@@ -1,0 +1,112 @@
+/*Inicia com Tag  h1{, p{ etc que se quer mudar ou se for mudar todo site usa * - depois abre {} e dentro insere as propriedades que se quer mudar, cor, tamanho etc
+
+Volte ao index.html e acima de title digite  <link rel="stylesheet" href="styles.css">  - esse link que irá fazer o css mudar o index em href precisa estar com o mesmo nome do arquivo css
+
+*   O asterisco  muda todo o index.html
+
+margin: 0; define o espaÃ§amento externo ao redor de um elemento, criando distÃĒncia entre ele e os elementos vizinhos ou as bordas 
+
+padding: 0; define o espaÃ§amento interno entre o conteÃšdo de um elemento (texto, imagem) e a sua borda
+
+box-sizing: border-box; define como a largura (width) e a altura (height) totais de um elemento sÃĢo calculadas  
+
+    Esses 3 acima é padrão, todo site inicia por eles - depois passa para o body
+
+body 
+    background:#09090b; cor do fundo da pagina - utlizada para definir o estilo do plano de fundo de um elemento HTML. 
+    Ela permite controlar a cor de fundo, imagens, posiÃ§ÃĢo, repetiÃ§ÃĢo e tamanho.
+    color:#e4e4e7;  cor dos textos
+    padding: 60px;  espaÃ§amento do conteudo e margem
+    display: flex;  permite enquadrar  o conteudo do body
+    flex-direction:column ; pede para deixar em coluna o conteudo
+    align-items: center; pede para centralizar o conteudo
+    
+    font-size: 32px; muda o tamanho da fonte do Titulo
+    color:#fafafa; muda a cor da fonte
+    font-weight: bold; grossura da fonte - bold = negrito
+
+span              span muda parte do texto selecionado no index.html titulo da pagina
+    color:#22c55e; cor do texto selecionado
+
+p
+    color:#71717a; muda a cor do paragrafo
+   margin: 10px; afasta a distancia vertical do titulo e o paragrafo 
+   
+textarea
+    resize: none; não deixa o usuario mudar o tamanho da caixa
+    width: 100%; largura
+    padding: 16px; altura
+    border: 1px solid #27272a; tamanho e estilo da borda
+    border-radius: 10px; arrendondamento da borda
+    background: #141419; cor do fundo
+    color:#fafafa  
+
+ button 
+    width: 100%; largura maxima
+    max-width: 640px; limita o maximo a 640
+    background: #22c55e; cor de fundo do botton
+    font-size: 16px; tamanho da fonte
+    font-weight: bold; stile da font
+    border-radius: 10px; tipe e tamanho da border
+    border: none; 
+    padding: 14px; altura
+    cursor: pointer; cursor vira mao ao posicionar no botton
+    margin-top: 10px;   margem do botton
+
+/*Inicio das alterações*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #09090b;
+    color: #e4e4e7;
+    padding: 40px;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #fafafa;
+    font-weight: bold;
+}
+
+span {
+    color: #22c552;
+}
+
+p {
+    color: #71717a;
+    margin: 10px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    max-width: 640px;
+    padding: 16px;
+    border: 1px solid #27272a;
+    border-radius: 10px;
+    background: #141419;
+    color: #fafafa
+}
+
+button {
+    width: 100%;
+    max-width: 640px;
+    background: #22c55e;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
